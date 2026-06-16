@@ -1,4 +1,5 @@
 {
+    "$schema": "https://getcomposer.org/schema.json",
     "name": "seophp/head-laravel",
     "license": "MIT",
     "type": "library",
@@ -8,27 +9,12 @@
         "head",
         "laravel"
     ],
-    "authors": [
-        {
-            "name": "David Llobell",
-            "email": "dllobellmoya@gmail.com",
-            "role": "Developer"
-        }
-    ],
-    "homepage": "https://github.com/seo-php/head-laravel",
+    "homepage": "https://github.com/seo-php/seo",
     "require": {
         "php": "^8.4",
-        "seophp/head": "dev-main",
-        "nette/php-generator": "^4.0"
-    },
-    "require-dev": {
-        "eolica/coding-standard": "^2.0",
-        "orchestra/testbench": "^10.0",
-        "pestphp/pest": "^3.0",
-        "phpstan/phpstan": "^2.0",
-        "rector/rector": "^2.0",
-        "symfony/var-dumper": "^7.0",
-        "livewire/livewire": "^3.0"
+        "illuminate/support": ">=12.0",
+        "nette/php-generator": "^4.2",
+        "seophp/head": "self.version"
     },
     "autoload": {
         "psr-4": {
@@ -40,12 +26,9 @@
             "Seo\\Head\\Laravel\\Tests\\": "tests"
         }
     },
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "allow-plugins": {
-            "pestphp/pest-plugin": true
-        }
+        "sort-packages": true
     },
     "extra": {
         "laravel": {
@@ -53,22 +36,5 @@
                 "Seo\\Head\\Laravel\\HeadServiceProvider"
             ]
         }
-    },
-    "scripts": {
-        "lint": [
-            "ecs check"
-        ],
-        "lint-fix": [
-            "ecs check --fix"
-        ],
-        "analyse": [
-            "phpstan analyse"
-        ],
-        "test": [
-            "pest --colors=always --parallel"
-        ],
-        "refactor": [
-            "rector process"
-        ]
     }
 }

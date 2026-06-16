@@ -1,9 +1,7 @@
-# head-laravel
+# SEOPHP Head for Laravel
 
-## Status
-
-This project is a work in progress. APIs and features are subject to change. Please do not use this library in production environments.
+> This is a read-only subtree split from the [seo-php/seo](https://github.com/seo-php/seo) repository. Please submit pull requests and issues there.
 
 ## License
 
-See `LICENSE` file for details.
+The MIT License (MIT). See the [LICENSE](LICENSE) file for more information.
